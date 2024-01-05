@@ -2,7 +2,7 @@
 
 namespace DeveloperSample.Models;
 
-public class Swallow : IBird
+public class Bird : IBird
 {
     /// <summary>
     /// This property represents the type of bird
@@ -18,7 +18,7 @@ public class Swallow : IBird
     /// This constructor creates a bird
     /// </summary>
     /// <param name="birdType"></param>
-    public Swallow(BirdType birdType)
+    public Bird(BirdType birdType)
     {
         Type = birdType;
     }
@@ -28,7 +28,7 @@ public class Swallow : IBird
     /// </summary>
     /// <param name="birdType"></param>
     /// <param name="load"></param>
-    public Swallow(BirdType birdType, BirdLoad load) : this(birdType)
+    public Bird(BirdType birdType, BirdLoad load) : this(birdType)
     {
         Load = load;
     }
