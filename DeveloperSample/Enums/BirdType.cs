@@ -3,20 +3,20 @@
 /// <summary>
 /// This enum represents the type of swallow
 /// </summary>
-public enum SwallowType
+public enum BirdType
 {
     /// <summary>
-    /// Unknown swallow type
+    /// Unknown bird type
     /// </summary>
     Unknown = 0,
 
     /// <summary>
     /// African swallow
     /// </summary>
-    African = 1,
+    AfricanSwallow = 1,
 
     /// <summary>
     /// European swallow
     /// </summary>
-    European = 2,
+    EuropeanSwallow = 2,
 }

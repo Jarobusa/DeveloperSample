@@ -1,9 +1,9 @@
 ﻿namespace DeveloperSample.Enums;
 
-/// <summary>
-/// This enum represents the type of swallow
+/// <summary>   
+/// This enum represents the load of the bird   
 /// </summary>
-public enum SwallowLoad
+public enum BirdLoad
 {
     /// <summary>
     /// No load
