@@ -5,5 +5,5 @@ namespace DeveloperSample.Factories;
 
 public class BirdFactory
 {
-    public static Bird GetSwallow(BirdType birdType) => new(birdType);
+    public static Bird GetBird(BirdType birdType) => new(birdType);
 }
