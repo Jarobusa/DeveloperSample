@@ -4,6 +4,8 @@ namespace DeveloperSample.Algorithms
 {
     public class AlgorithmTest
     {
+        #region GetFactorial
+
         [Fact]
         public void GetFactorial()
         {
@@ -15,6 +17,10 @@ namespace DeveloperSample.Algorithms
         {
             Assert.Throws<ArgumentException>(() => Algorithms.GetFactorial(-1));
         }
+
+        #endregion
+
+        #region FormatSeparators
 
         [Fact]
         public void FormatSeparators()
@@ -45,5 +51,7 @@ namespace DeveloperSample.Algorithms
         {
             Assert.Equal("a, b and c", Algorithms.FormatSeparators("a", "b", "c"));
         }
+        
+        #endregion
     }
 }
