@@ -1,10 +1,9 @@
 using System;
 
-namespace DeveloperSample.Container
+namespace DeveloperSample.Container;
+
+public class Container
 {
-    public class Container
-    {
-        public void Bind(Type interfaceType, Type implementationType) => throw new NotImplementedException();
-        public T Get<T>() => throw new NotImplementedException();
-    }
+    public void Bind(Type interfaceType, Type implementationType) => throw new NotImplementedException();
+    public T Get<T>() => throw new NotImplementedException();
 }
