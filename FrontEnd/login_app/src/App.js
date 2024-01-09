@@ -8,16 +8,16 @@ const App = () => {
   const [currentUser, setCurrentUser] = useState('');
   const [users, setUsers] = useState([]);
 
-  const handleLogin = (event) => {
+  const handleLoginAttempt = (event, loginAttempt) => {
     event.preventDefault();
     setUsers([...users, currentUser]);
+    setLoginAttempts([...loginAttempts, loginAttempt]);
     setCurrentUser('');
-  };
-
+  };  
 
   return (
     <div className="App">
-      <LoginForm onSubmit={({ login, password }) => console.log({ login, password })} />
+      <LoginForm onSubmit={({ login, password }) => handleLoginAttempt(event, login)} />
       <LoginAttemptList attempts={loginAttempts} />
     </div>
   );

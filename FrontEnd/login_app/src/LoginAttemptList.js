@@ -5,10 +5,12 @@ const LoginAttempt = (props) => <li {...props}>{props.children}</li>;
 
 const LoginAttemptList = (props) => (
 	<div className="Attempt-List-Main">
-	 	<p>Recent activity</p>
-	  	<input type="input" placeholder="Filter..." />
+		<p>Recent activity</p>
+		<input type="input" placeholder="Filter..." />
 		<ul className="Attempt-List">
-			<LoginAttempt>TODO</LoginAttempt>
+			{props.attempts.map((attempt, index) => (
+				<LoginAttempt key={index}>{attempt}</LoginAttempt>
+			))}
 		</ul>
 	</div>
 );
